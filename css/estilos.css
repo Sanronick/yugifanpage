@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Yu-Gi-Oh! Matrix Regular Small Caps 1';
+}
+
+@font-face {
+    font-family:'Yu-Gi-Oh! Matrix Regular Small Caps 1';
+    src: url('../font/Yu-Gi-Oh!\ Matrix\ Regular\ Small\ Caps\ 1.ttf');
+}
+
+
+nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    justify-items: center;
+}
+
+
+.section1{
+    background-image: url('../img/yugiamigos.jpg');
+    opacity: 50%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+
+}
