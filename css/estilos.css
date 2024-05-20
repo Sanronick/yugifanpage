@@ -92,3 +92,12 @@ button{
 button:hover{
     background-color: #ddd;
 }
+.personajes{
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.personajes img{
+    width: 100%;
+}
