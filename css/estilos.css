@@ -94,10 +94,40 @@ button:hover{
 }
 .personajes{
     background-color: black;
+    color: #fff;
+    font-size: 1vw;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-areas:'titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo'
+}
+
+.duelistas{
+    border: solid red;
+    border-radius:20px;
+    grid-area: titulo;
+    margin:4vw 25vw;
+    text-align: center;
+    font-size: 2vw;
 }
 
 .personajes img{
     width: 100%;
+}
+
+.personajes>.overlay{
+    position:relative;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.personajes:hover .overlay{
+    opacity: 1;
 }
