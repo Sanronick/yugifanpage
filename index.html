@@ -15,7 +15,7 @@
     <a class="navbar-brand" href="#"><img src="img/pngwing.com.png" alt="Yu-GI-OH!" width="90" height="72" class="yugi"> Yu-GI-OH
       Fan Page</a>
       <ul>
-      <li>Inicio</li>
+      <a href="#yugi"><li>Inicio</li></a>
       <li>pagina2</li>
       <li>pagina3</li>
     </ul>
@@ -29,14 +29,12 @@
       <section class="personajes">
         <h2 class="duelistas">Nuestros principales Duelistas</h2>
         <a id="yugi">
-          <img src="img/yugi.png" alt="yugi">
-          <div class="overlay">
-            <p>Yugi Muto</p>
+          <div class="overlay"><a href="#yugi">
+          <img src="img/yugi.png" alt="Yugi Muto"></a>
           </div>
         </a>
         <img src="img/jaden.png" alt="jaden">
         <div class="overlay">
-          <p>Jaden Yuki</p>
         </div>
         <img src="img/yusei.png" alt="yusei">
         <div class="overlay">
@@ -53,14 +51,19 @@
       </section>
 
       <section>
-        <div id="yugi">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias officia odit, quia molestiae tempore sint incidunt recusandae nam quam nobis voluptas ullam sequi dolores asperiores voluptate esse voluptatibus. Voluptatum, magni?</p>
-
+        <div id="yugi" class="yugi">
+          <div id="cartayugi">
+            
+          </div>
+          <div class="textoyugi">
+            <p>Yugi Muto (武藤 遊戯 Mutō Yūgi?) es el protagonista principal de la serie manga, la primera serie anime y la segunda serie anime de Yu-Gi-Oh!. Es bueno para los juegos y en los rompecabezas, especialmente en el Duelo de Monstruos. Posee el Rompecabezas del Milenio, lo que le permite establecer un enlace con Yami Yugi, el espíritu del faraón que fue sellado en dicho rompecabezas hace 3.000 años. De esta manera, Yami y Yugi pueden intercambiar el control de su cuerpo. Su carta insignia es el Mago oscuro</p>
+            <button id="vercarta">Ver Carta</button>
+          </div>
         </div>
       </section>
     </main>
 
-
+<script src="js/scripts.js"></script>
 </body>
 
 </html>
