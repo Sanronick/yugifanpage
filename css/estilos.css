@@ -97,7 +97,7 @@ button:hover{
     color: #fff;
     font-size: 1vw;
     display: grid;
-    grid-template-areas:'titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo'
+    grid-template-areas:'titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo';
 }
 
 .duelistas{
@@ -111,6 +111,8 @@ button:hover{
 
 .personajes img{
     width: 100%;
+    margin-bottom: 2%;
+    margin-top: 1vw;
 }
 
 
@@ -122,18 +124,31 @@ button:hover{
 
 }
 
-.yugi{
+.cont-duelistas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+.cont-duelistas a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.yugi,.jaden,.yusei{
     margin-top: 5%;
     display: flex;
     flex-direction: row;
     align-content: space-between;
-    background-color: beige;
+    background-color:whitesmoke;
+    border-top: 0.1vw solid #333;
 }
 
-.textoyugi{
+.textoyugi,.textojaden,.textoyusei{
     font-size: 2vw;
     margin-left: 5%;
 }
-#vercarta{
+#vercarta,#vercartaj,#vercartayus{
     font-size: 1.5vw;
 }
