@@ -1,18 +1,5 @@
-var cartayugi=document.getElementById('vercarta')
-var cartayus=document.getElementById('vercartayus')
-
-cartayugi.addEventListener('click',function(){
-    obtenerCarta()
-})
-cartayus.addEventListener('click',function(){
-    obtenerCarta()
-})
-
-
-
 function obtenerCarta(){
     let url='https://db.ygoprodeck.com/api/v7/cardinfo.php'
-
 
     //instancio la peticion
 
@@ -28,20 +15,40 @@ function obtenerCarta(){
 
             let respuesta=JSON.parse(this.responseText)
             console.log(respuesta)
-            let respuesta2=JSON.parse(this.responseText)
+            
 
             var imgcarta=respuesta["data"][2578]["card_images"][0]["image_url_small"]
-            var imgcartayus=respuesta2['data'][10701]["card_images"][0]["image_url_small"]
-
-            console.log(imgcarta)
+            var imgcartajaden=respuesta['data'][3570]['card_images'][0]['image_url_small']
+            var imgcartayus=respuesta['data'][10701]["card_images"][0]["image_url_small"]
+            var imgcartayuma=respuesta['data'][8028]['card_images'][0]['image_url_small']
 
             let parayugi=document.getElementById("cartayugi")
             parayugi.innerHTML=`<img src="${imgcarta}" alt="Mago Oscuro">`
-            let parayusei=document.getElementById('cartayusei')
-            parayusei.innerHTML=`<img src="${imgcartayus}" alt="Dragon Polvo de Estrellas">`
+            let parajaden=document.getElementById('cartajaden')
+            parajaden.innerHTML=`<img src="${imgcartajaden}" alt="Héroe elemental Neos">`
+            let parayus=document.getElementById('cartayusei')
+            parayus.innerHTML=`<img src="${imgcartayus}" alt="Dragón Polvo de Estrellas">`
+            let parayuma=document.getElementById('cartayuma')
+            parayuma.innerHTML=`<img src="${imgcartayuma}" alt="Numero 39: Utopía">`
+            
         }
     }
 }
+function vacio(){
+    let parayugi=document.getElementById('cartayugi');
+    parayugi.innerHTML='';
+    let parajaden=document.getElementById('cartajaden');
+    parajaden.innerHTML='';
+    let parayus=document.getElementById('cartayusei');
+    parayus.innerHTML='';
+    let parayuma=document.getElementById('cartayuma');
+    parayuma.innerHTML='';
+}
+
+
+
+
+
 
 var cartajaden=document.getElementById('vercartaj')
 cartajaden.addEventListener('click',function(){
@@ -59,10 +66,9 @@ function obtenerCartaj(){
         if(this.status==200 && this.readyState==4){
             let respuesta=JSON.parse(this.responseText)
             console.log(respuesta)
-            var imgcarta=respuesta['data'][3570]['card_images'][0]['image_url_small']
+            
             console.log(imgcarta)
-            let parajaden=document.getElementById('cartajaden')
-            parajaden.innerHTML=`<img src="${imgcarta}" alt="Héroe elemental Neos">`
+            
         }
     }
 }

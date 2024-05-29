@@ -85,7 +85,7 @@ button{
     color: #333;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1.5vw;
     cursor: pointer;
     margin-top: 10px;
 }
@@ -136,7 +136,7 @@ button:hover{
     color: #fff;
 }
 
-.yugi,.jaden,.yusei{
+.yugi,.jaden,.yusei,.yuma{
     margin-top: 5%;
     display: flex;
     flex-direction: row;
@@ -145,10 +145,14 @@ button:hover{
     border-top: 0.1vw solid #333;
 }
 
-.textoyugi,.textojaden,.textoyusei{
-    font-size: 2vw;
+.textoyugi,.textojaden,.textoyusei,.textoyuma{
+    font-size: 1.5vw;
     margin-left: 5%;
 }
-#vercarta,#vercartaj,#vercartayus{
-    font-size: 1.5vw;
+.boton{
+    display: flex;
+    justify-content: center;
+}
+.visor{
+    font-size:5vw;
 }
