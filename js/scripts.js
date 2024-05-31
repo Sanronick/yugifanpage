@@ -21,6 +21,8 @@ function obtenerCarta(){
             var imgcartajaden=respuesta['data'][3570]['card_images'][0]['image_url_small']
             var imgcartayus=respuesta['data'][10701]["card_images"][0]["image_url_small"]
             var imgcartayuma=respuesta['data'][8028]['card_images'][0]['image_url_small']
+            var imgcartayuya=respuesta['data'][8185]['card_images'][0]['image_url_small']
+            
 
             let parayugi=document.getElementById("cartayugi")
             parayugi.innerHTML=`<img src="${imgcarta}" alt="Mago Oscuro">`
@@ -30,6 +32,8 @@ function obtenerCarta(){
             parayus.innerHTML=`<img src="${imgcartayus}" alt="Dragón Polvo de Estrellas">`
             let parayuma=document.getElementById('cartayuma')
             parayuma.innerHTML=`<img src="${imgcartayuma}" alt="Numero 39: Utopía">`
+            let parayuya=document.getElementById('cartayuya')
+            parayuya.innerHTML=`<img src="${imgcartayuya}" alt="Dragón Pendulo de Ojos Anomalos">`
             
         }
     }
@@ -43,32 +47,7 @@ function vacio(){
     parayus.innerHTML='';
     let parayuma=document.getElementById('cartayuma');
     parayuma.innerHTML='';
+    let parayuya=document.getElementById('cartayuya');
+    parayuya.innerHTML='';
 }
 
-
-
-
-
-
-var cartajaden=document.getElementById('vercartaj')
-cartajaden.addEventListener('click',function(){
-    obtenerCartaj()
-})
-
-function obtenerCartaj(){
-    let url='https://db.ygoprodeck.com/api/v7/cardinfo.php'
-
-
-    const api=new XMLHttpRequest();
-    api.open('GET',url,true)
-    api.send()
-    api.onreadystatechange=function(){
-        if(this.status==200 && this.readyState==4){
-            let respuesta=JSON.parse(this.responseText)
-            console.log(respuesta)
-            
-            console.log(imgcarta)
-            
-        }
-    }
-}

@@ -15,10 +15,14 @@
     <a class="navbar-brand" href="#"><img src="img/pngwing.com.png" alt="Yu-GI-OH!" width="90" height="72" class="icoyugi"> Yu-GI-OH
       Fan Page</a>
       <ul>
-      <li>Inicio</li>
-      <li>pagina2</li>
-      <li>pagina3</li>
+        <a href="#">
+          <li>Inicio</li>
+        </a>
+        <a href="#personajes">
+          <li>Nuestos Héroes</li>
+        </a>
     </ul>
+      <button>Ingresar</button>
   </nav>
     <main>
       <section class="section1">
@@ -26,13 +30,12 @@
         <h3>Asociate al club</h3>
         <button type="button">UNIRME</button>
       </section>
-      <section class="personajes">
-        <h2 class="duelistas">Nuestros principales Duelistas</h2>
+      <section class="personajes" id="personajes">
+        <h2 class="duelistas">Nuestros Héroes</h2>
           <div class="cont-duelistas">
             <a href="#yugi">
             <p>Yugi Muto</p>
               <img src="img/yugi.png" alt="Yugi Muto"></a>
-            </a>
           </div>
         <div class="cont-duelistas">
           <a href="#jaden">
@@ -48,19 +51,20 @@
         </div>
         <div class="cont-duelistas">
           <a href="#yuma">
-
             <p>Yuma Tsukumo</p>
             <img src="img/yuma.png" alt="yuma">
           </a>
         </div>
-    
+        <div class="cont-duelistas">
+          <a href="#yuya">
+            <p>Yuya Sakaki</p>
             <img src="img/yuya.png" alt="yuya">
-        <div class="overlay">
-          <p>Yuya Sakaki</p>
+          </a>
         </div>
       </section>
 
       <section>
+        <h2 href="">Biografia</h2>
         <div class="boton">
           <button id="visor" onmousedown="obtenerCarta()" onmouseenter="vacio()">Ver Cartas</button>
         </div>
@@ -99,8 +103,21 @@
         </div>
         <div id="cartayuma"></div>
       </div>
+
+      <!--Seccion Yuya-->
+      <div id="yuya" class="yuya">
+        <div id="cartayuya"></div>
+        <div class="textoyuya">
+          <p>Yuya Sakaki (榊 遊矢 Sakaki Yūya?) es el protagonista del anime Yu-Gi-Oh! ARC-V. Él es un estudiante de la Escuela de Duelos Tú Show, que sueña con convertirse en un "Dueltretenedor", un tipo de Duelista profesional, como su padre. Él es el pionero de la Invocación por Péndulo. Después de ganar la Copa de la Amistad, Yuya se convirtió en el nuevo Rey de los Duelos en la Dimensión de Sincronía. Él es uno de los Lancers. Su carta insignia es Dragón de Péndulo de Ojos Anómalos</p>
+        </div>
+      </div>
+
       </section>
     </main>
+    <footer>
+      <a href="#"><h4>Problemas para Ingresar</h4></a>
+      <a href="#"><h4>Contacto</h4></a>
+    </footer>
 
 <script src="js/scripts.js"></script>
 </body>
