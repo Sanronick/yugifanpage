@@ -126,6 +126,12 @@ button:hover{
     text-align: center;
     font-size: 1.4vw;
 }
+.yugimg,.jadenmg,.yuseimg,.yumamg,.yuyamg{
+    transition: transform .2s;
+}
+.yugimg:hover,.jadenmg:hover,.yuseimg:hover,.yumamg:hover,.yuyamg:hover{
+    transform: scale(1.3);
+}
 
 .cont-duelistas a{
     text-decoration: none;
