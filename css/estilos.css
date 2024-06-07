@@ -25,10 +25,13 @@ nav{
  nav a{
     text-decoration: none;
     color: #333;
-    font-size: 1.7vw;
+    font-size: 5vw;
     display: flex;
     align-items: center;
     margin-right: 10px;
+ }
+ #titulo{
+    font-size: 2vw;
  }
  nav ul{
     list-style: none;
@@ -46,8 +49,10 @@ nav{
  }
  nav button{
     margin-left:auto;
+    font-size: 1.5vw;
  }
 
+ 
 .section1{
     background-image: url('../img/yugiamigos_LE_auto_x2.jpg');
     background-size: cover;
@@ -82,14 +87,17 @@ nav{
 .section1 button{
     position: relative;
     z-index: 2;
+    font-size: 3vw;
 }
+
+
 
 button{
     background-color: #fff;
     color: #333;
     border: none;
     padding: 10px 20px;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     cursor: pointer;
     margin-top: 10px;
 }
@@ -172,6 +180,9 @@ button:hover{
 }
 button:active{
     transform: scale(0.9);
+}
+#visor{
+    font-size: 1.8vw;
 }
 
 section h2{
