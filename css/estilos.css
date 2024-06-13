@@ -83,16 +83,52 @@ nav{
 }
 
 .section1 h2,
-.section1 h3,
-.section1 button{
+.section1 h3{
     position: relative;
     z-index: 2;
     font-size: 3vw;
+    cursor: pointer;
+    display:block;
+}
+
+
+.boton-escondido{
+    display: none;
+    position:absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background: rgb(231,150,150);
+    background: radial-gradient(circle, rgba(231,150,150,1) 0%, rgba(107,114,122,1) 21%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+.boton-escondido:hover{
+    animation: movidito 1s ease-in;
+}
+
+@keyframes movidito{
+    30%{transform:scale(1.2);}
+    40%,60%{transform: rotate(-20deg)scale(1.2);}
+    50%{transform: rotate(20deg)scale(1.2);}
+    70%{transform: rotate(0deg)scale(1.2);}
+    100%{transform: scale(1);}
+}
+
+.section1:hover .boton-escondido{
+    display: block;
 }
 
 
 
-button{
+/* button{
     background-color: #fff;
     color: #333;
     border: none;
@@ -103,7 +139,7 @@ button{
 }
 button:hover{
     background-color: #ddd;
-}
+} */
 .personajes{
     background-color: black;
     color: #fff;
