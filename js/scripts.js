@@ -17,11 +17,11 @@ function obtenerCarta(){
             console.log(respuesta)
             
 
-            var imgcarta=respuesta["data"][2578]["card_images"][0]["image_url_small"]
-            var imgcartajaden=respuesta['data'][3570]['card_images'][0]['image_url_small']
-            var imgcartayus=respuesta['data'][10701]["card_images"][0]["image_url_small"]
-            var imgcartayuma=respuesta['data'][8028]['card_images'][0]['image_url_small']
-            var imgcartayuya=respuesta['data'][8185]['card_images'][0]['image_url_small']
+            var imgcarta=respuesta["data"][2594]["card_images"][0]["image_url_small"]
+            var imgcartajaden=respuesta['data'][3589]['card_images'][0]['image_url_small']
+            var imgcartayus=respuesta['data'][10752]["card_images"][0]["image_url_small"]
+            var imgcartayuma=respuesta['data'][8058]['card_images'][0]['image_url_small']
+            var imgcartayuya=respuesta['data'][8217]['card_images'][0]['image_url_small']
             
 
             let parayugi=document.getElementById("cartayugi")
