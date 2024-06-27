@@ -51,3 +51,5 @@ function vacio(){
     parayuya.innerHTML='';
 }
 
+
+
