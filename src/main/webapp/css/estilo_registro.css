@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Yu-Gi-Oh! Matrix Regular Small Caps 1';
+}
+
+@font-face {
+    font-family:'Yu-Gi-Oh! Matrix Regular Small Caps 1';
+    src: url('../font/Yu-Gi-Oh!\ Matrix\ Regular\ Small\ Caps\ 1.ttf');
+}
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/tumblr_muhbnjse6i1rj8e9io1_500.gif");
+    background-size: cover;
+}
+
+form{
+    margin: 3vw;
+    display: flex;
+    color: white;
+    padding:1vw;
+    font-size: 3vw;
+    flex-direction: column;
+    align-items: center;
+    /* width: auto; */
+}
+input{
+    margin: 25px;
+    padding: 0.5vw;
+    font-size: 2vw;
+    display: inline-block;
+    border-radius: 10px;
+}
+input:hover{
+    border-color: yellow;
+}
+input:focus::placeholder{
+    background-color: grey;
+    color: white;
+    
+}
+
+input[type=radio],
+input[type=checkbox]{
+    accent-color: yellow;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+form label{
+    display: inline-block;
+    margin-right: 15px;
+}
+button{
+    
+    font-size: 2vw;
+    padding: 0.5vw;
+    margin:15px;
+    cursor:pointer;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+}
+legend{
+    margin:20px;
+    padding: 20px;
+}
+table{
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    color: whitesmoke;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2%;
+    border-collapse: collapse;
+    text-align: center;
+}
+

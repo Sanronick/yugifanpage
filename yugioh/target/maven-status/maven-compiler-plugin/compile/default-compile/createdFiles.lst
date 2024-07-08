@@ -1,0 +1,8 @@
+edu\ar\model\Personas.class
+edu\ar\App.class
+edu\ar\model\Duelista.class
+edu\ar\model\Usuario.class
+edu\ar\data\Conexion.class
+edu\ar\controller\YugiServletController.class
+edu\ar\data\TestUsuario.class
+edu\ar\data\UsuarioDAO.class

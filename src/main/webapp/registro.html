@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/pngwing.com.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilo_registro.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css">
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Registro de Usuarios</title>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Inscripcion</legend>
+                <div class="datos">
+
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre..">
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido..">
+                    <input type="email" name="mail" id="mail" placeholder="Email Valido">
+                    <input type="text" name="nick" id="nick" placeholder="Cómo quieres que te llamen..">
+                    <input type="password" name="psw" id="psw" placeholder="Contraseña" required>
+                </div>
+                <div class="radios">
+                    
+                    <input type="radio" name="sexo" id="masc" value="Masculino">
+                    <label for="masc">Masculino</label><br>
+                    <input type="radio" name="sexo" id="fem" value="Femenino">
+                    <label for="fem">Femenino</label><br>
+                    <input type="radio" name="sexo" id="bin" value="No Binario">
+                    <label for="bin">No Binario</label><br>
+                    <input type="radio" name="sexo" id="nsnc" value="NS/NC">
+                    <label for="nsnc">NS/NC</label>
+                </div>
+                <input type="number" name="edad" id="edad" placeholder="Dime tu edad">
+                <div class="tos">
+                    <input type="checkbox" name="tos" id="tos" required>
+                    
+                    <label for="tos">Acepto Términos y condiciones</label>
+                </div>
+                <button>Registrarme</button>
+                
+            </form>
+        </fieldset>
+        <section class="tablausuarios">
+            <div class="table-responsive">
+                <table id="usuarios">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Mail</th>
+                        <th>Nick</th>
+                        <th>Password</th>
+                        <th>Sexo</th>
+                        <th>Edad</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script>
+        let table=new DataTable('#Usuarios')
+    </script>
+</body>
+</html>
